@@ -1,0 +1,19 @@
+.wrapper {
+    width: 1000px;
+    border: 2px solid black;
+    display: flex;
+}
+
+.menu-tab {
+    width: 10%;
+}
+
+.tab-content {
+    width: 90%;
+}
+
+.menu-tab button {
+    margin: -1px;
+    width: 100%;
+    height: 60px;
+}
