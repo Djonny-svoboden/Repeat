@@ -1,19 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .wrapper {
     width: 1000px;
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
 }
 
 .menu-tab {
-    width: 10%;
+    width: 25%;
 }
 
 .tab-content {
-    width: 90%;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    background: rgba(188, 157, 189, 0.87);
+    height: 500px;
+    overflow: hidden;
+}
+
+.fagl {
+    border: 1px solid black;
 }
 
 .menu-tab button {
-    margin: -1px;
+    text-align: left;
+    font-size: 18px;
+    border: 1px solid black;
     width: 100%;
     height: 60px;
+    background: rgb(148, 212, 238);
 }
