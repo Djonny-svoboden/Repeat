@@ -29,8 +29,37 @@ body {
 .menu-tab button {
     text-align: left;
     font-size: 18px;
-    border: 1px solid black;
     width: 100%;
     height: 60px;
     background: rgb(148, 212, 238);
+}
+
+.active {
+    border-right: 0;
+    background: rgba(188, 157, 189, 0.87);
+}
+
+.inner-tab {
+    width: 100%;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fulltab {
+    border: 1px solid #000000;
+}
+
+.texts {
+    justify-content: center;
+    align-items: center;
+}
+
+.fіlltab {
+    border-left: none;
 }
