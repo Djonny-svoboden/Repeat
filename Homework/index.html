@@ -7,21 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mo Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="menu-tab">
-            <button class="horisontabs" onclick="">Item 1</button>
-            <button class="horisontabs" onclick="">Item 2</button>
-            <button class="horisontabs" onclick="">Item 3</button>
-            <button class="horisontabs" onclick="">Item 4</button>
-            <button class="horisontabs" onclick="">Item 5</button>
-            <button class="horisontabs" onclick="">Item 6</button>
-            <button class="horisontabs" onclick="">item 7</button>
+
+            <button class="buttab horisontabs" onclick="openTaf(event,'item1')">Item 1</button>
+            <button class="buttab horisontabs" onclick="openTaf(event,'item2')">Item 2</button>
+            <button class="buttab horisontabs" onclick="openTaf(event,'item3')">Item 3</button>
+            <button class="buttab horisontabs" onclick="openTaf(event,'item4')">Item 4</button>
+            <button class="buttab horisontabs" onclick="openTaf(event,'item5')">Item 5</button>
+            <button class="buttab horisontabs" onclick="openTaf(event,'item6')">Item 6</button>
+            <button class="buttab horisontabs" onclick="openTaf(event,'item7')">item 7</button>
+            <div class="texts">@2019</div>
         </div>
         <div class="tab-content">
-            <div class="inner-tab" id="item1">
+            <div class="tabcontent inner-tab" id="item1">
                 «Вангард» (англ. Vanguard — «авангард») — британський лінійний корабель періоду Другої світової війни. Був спроектований у 1939—1941 роках, у зв'язку з прогнозованим пізнім терміном уведення в дію лінкорів типу «Лайон». Планувався для термінової побудови
                 з використанням 381-мм гарматних установок, що зберігалися на складах з 1920-х років. Незважаючи на нагальну потребу, закладений у 1941 році лінкор ввести в дію до кінця війни не встигли, а після війни його добудова ще сповільнилася і
                 він був взятий на озброєння лише у 1946 році, ставши останнім лінкором в історії, а також найбільшим з британських лінкорів. Післявоєнна історія корабля, як і інших лінкорів, виявилася порівняно недовгою. У перші повоєнні роки «Вангард»
@@ -29,33 +32,34 @@
                 корабель був виведений у резерв і залишався в ньому аж до зняття з озброєння і продажу на злом в 1960 році.
 
             </div>
-            <div class="inner-tab" id="item2">
+            <div class="tabcontent inner-tab" id="item2">
                 Список плазунів Франції. У списку перелічені 42 автохтонні види плазунів, які мешкають у Франції, а також 3 інтродуковані, 1 автохтонний зниклий вид і ще 1 вид, який потребує подальшого уточнення. Основою статті став список Французького герпетологічного
                 товариства (фр. Société Herpétologique de France). У списку перелічені плазуни виключно європейської частини Франції (материкова частина та Корсика), рептилії заморських територій не враховуються.
 
             </div>
-            <div class="inner-tab" id="item3">
+            <div class="tabcontent inner-tab" id="item3">
                 Після всходу на престол імператор Павло I, що мав важкі стосунки з матір'ю (Катериною ІІ) почав закривати або ліквідовувати її проекти. Серед ліквідованих опинились грандіозний палац померлої імператриці в місцевості Пела і проект побудови порту і міста
                 Одеси. Будівельну експедицію в місті ліквідували, адмірала де Рібаса викликали в Петербург, відірвавши від справ, а перший містобудівничий Одеси Франц де Воллан (1752–1818) втратив посаду. На щастя, в місті залишились члени магістрату,
                 що не втратили ініціативи і вдалися до дипломатичних заходів.
             </div>
-            <div class="inner-tab" id="item4">Льодовик Нижній Грінделвальд (нім. Unterer Grindelwaldgletscher) — це один з двох долинних льодовиків на південь від селища Грінделвальд, розташованих на північній стороні Бернських Альп в кантоні Берн, Швейцарія (інший — Верхній Грінделвальд).
+            <div class="tabcontent inner-tab" id="item4">Льодовик Нижній Грінделвальд (нім. Unterer Grindelwaldgletscher) — це один з двох долинних льодовиків на південь від селища Грінделвальд, розташованих на північній стороні Бернських Альп в кантоні Берн, Швейцарія (інший — Верхній Грінделвальд).
                 Льодовик Нижній Грінделвальд має рукав (притоку) — льодовик Грінделвальд-Фішер (нім. Grindelwald-Fieschergletscher, місцева назва — Фішер), який можна побачити з оглядового вікна станції «Айсмеер» Залізниці Юнгфрау, вирізаної в горі Айгер.[1]
                 Цей рукав не слід плутати з льодовиком Фішер, розташованим на південь від Фішерхорна. </div>
-            <div class="inner-tab" id="item5">Pteridinium має три частки, які, як правило, розплющені таким чином, що видно тільки дві частки. Кожна частка складається з ряду паралельних ребер, які розширюються назад від головної осі, де три частки сходяться. Навіть на добре збережених
+            <div class="tabcontent inner-tab" id="item5">Pteridinium має три частки, які, як правило, розплющені таким чином, що видно тільки дві частки. Кожна частка складається з ряду паралельних ребер, які розширюються назад від головної осі, де три частки сходяться. Навіть на добре збережених
                 зразках немає ніяких ознак рота, ануса, очей, ніг, вусиків або будь-яких інших придатків або органів. Організм ріс в основному за рахунок відрощування нових сегментів (ймовірно, з обох кінців), а також (у меншій мірі) — розширення існуючих
                 сегментів. Виявлені зразки Pteridinium наводять на думку, що він вів осілий спосіб життя, лежачи на дні або, можливо, зарившись в осад на мілководді. Не відомо жодного сліду, залишеного рухомим Pteridinium. Неясно, чи харчувався Pteridinium
                 за допомогою фотосинтезу чи висмоктував поживні речовини з морської води за допомогою осмосу. </div>
-            <div class="inner-tab" id="item6">МО (міжнародна одиниця) — у фармакології це одиниця вимірювання кількості речовини, заснована на біологічній активності. Використовується для вітамінів, гормонів, деяких ліків, вакцин, складових крові і подібних біологічно активних речовин.
+            <div class="tabcontent inner-tab" id="item6">МО (міжнародна одиниця) — у фармакології це одиниця вимірювання кількості речовини, заснована на біологічній активності. Використовується для вітамінів, гормонів, деяких ліків, вакцин, складових крові і подібних біологічно активних речовин.
                 Незважаючи на назву, МО не є частиною міжнародної системи СІ. Точне визначення однієї МО розрізняється для різних речовин і встановлено міжнародною угодою. Комітет біологічної стандартизації при Всесвітній організації охорони здоров'я
                 надає еталонні заготівлі певних речовин, (довільно) встановлює кількість одиниць МО, що містяться в них, і визначає біологічні процедури для порівняння інших заготовок з еталонними. Метою таких процедур є те, щоб різні заготовки, що мають
                 однакову біологічну активність, містили однакову кількість одиниць МО. Для деяких речовин згодом були встановлені масові еквіваленти однієї МО, і від вимірювання в цих одиницях офіційно відмовилися. Однак, одиниця МО все ж може залишатися
                 в широкому застосуванні через її зручність. Наприклад, вітамін E існує у восьми різних формах, які відрізняються своєю біологічною активністю. Замість точної вказівки типу і маси вітаміну в заготовці, іноді зручно просто вказати його кількість
                 в МО. </div>
-            <div class="inner-tab" id="item7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia totam! Libero ratione dicta maiores illo nisi quaerat id quia quod. Voluptatum consequatur vel tempora ea consequuntur facere unde autem cumque explicabo distinctio,
+            <div class="tabcontent inner-tab" id="item7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia totam! Libero ratione dicta maiores illo nisi quaerat id quia quod. Voluptatum consequatur vel tempora ea consequuntur facere unde autem cumque explicabo distinctio,
                 qui molestias quas perspiciatis impedit excepturi. Laborum animi sint praesentium rerum totam, voluptatum odit? Perspiciatis, iste ab, sapiente ratione ipsa consectetur suscipit eos sunt inventore non labore voluptatem maiores expedita
                 soluta ullam dolores quo ducimus sed veritatis! Facilis, optio! Fuga accusamus architecto quod culpa sed fugiat eum quam a possimus ex, suscipit mollitia cum nihil est at ratione autem neque eveniet? Nesciunt repellat delectus in quam
-                magnam?</div>
+                magnam?
+            </div>
 
         </div>
     </div>
