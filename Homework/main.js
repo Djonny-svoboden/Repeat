@@ -1,7 +1,7 @@
-function openTag(event, Name) {
-    var i, innerTab, buttab
-    innerTab = document.getElementsByClassName("inner-tab");
-    for (i = 0; i < tabcontent.lenght; i++) {
-        innerTab[i].style.display = "none"
-    }
+var bultab;
+var tabCont;
+window.onload = function() {
+    tabCont = document.getElementsByClassName('inner-tab')
+    bultab = document.getElementsByClassName('buttab')
+    hidetabs(1);
 }
